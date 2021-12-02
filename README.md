@@ -8,7 +8,7 @@ https://github.com/mlee97/COMP472-MiniProject3
 Experiment with word embeddings using Gensim
 
 ## Objective
-Using the pre-trained model word2vec-google-news-300, find synonyms for given words in the test set using the similarity method. Analyze the results to find how accurate the predictions were.
+Using different pre-trained models, find synonyms for given words in the test set using the similarity method. Analyze the results to find how accurate the predictions were.
 
 ## Files Included
 - Task1
@@ -17,6 +17,12 @@ Using the pre-trained model word2vec-google-news-300, find synonyms for given wo
   - word2vec-google-news-300-details.csv
   
 - Task2:
+  - Task2
+  - analysis.csv
+  - glove-twitter-100-details.csv
+  - glove-twitter-200-details.csv
+  - glove-wiki-gigaword-300-details.csv
+  - word2vec-ruscorpora-300-details.csv
 
 - synonyms.csv
 
@@ -33,7 +39,7 @@ Using the pre-trained model word2vec-google-news-300, find synonyms for given wo
 1. Download repository.
 2. Open VS Code.
 3. Locate and open the directory where COMP472-MiniProject3 was cloned.
-4. Create a virtual Python environment in this folder, and set as Python Interpreter.
+4. Create a virtual Python environment in this folder, and set the interpreter as Python Interpreter.
 5. Update Gensim
 6. Run the Python File for the desired task.
 7. Go back into the directory and view the output files.
