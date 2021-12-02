@@ -3,6 +3,7 @@ from gensim.models import Word2Vec
 import pandas as pd
 import csv
 
+
 google_model = downloader.load("word2vec-google-news-300")  # Load the word2vec-google-news-300 pretrained embedding model. 
 test_set = pd.read_csv('synonyms.csv')                      # Read the passed csv file.
 
@@ -16,7 +17,7 @@ with open('word2vec-google-news-300-details.csv', mode='w', newline='') as csv_f
         value = 0                   # Stores the cosine similarity value.
         index_guess = '0'           # Stores the column title of the guess word.
         correct_guess = "wrong"     # Stores a boolean string value corresponding to whether the guess was correct or not.
- 
+
         try:
             result = google_model.similarity(test_set['question'][i], test_set['0'][i]) # Check the cosine similarity between the question word and the guess word in column '0'.
             if (result > value):    # If current cosine similarity ('result') is of greater value than 'value', assign 'value' to the bigger result number.
